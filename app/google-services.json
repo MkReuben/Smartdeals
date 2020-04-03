@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "849953093964",
+    "firebase_url": "https://smartdeals-febfd.firebaseio.com",
+    "project_id": "smartdeals-febfd",
+    "storage_bucket": "smartdeals-febfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849953093964:android:a5a190555703744bb037e9",
+        "android_client_info": {
+          "package_name": "mkreuben.example.com.smartdeals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849953093964-nhejim5nj5b1ie0q0glc59qh57vej14r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mkreuben.example.com.smartdeals",
+            "certificate_hash": "b106b5d14d72976ceb61334d348810ff38bdf2d2"
+          }
+        },
+        {
+          "client_id": "849953093964-1osfk3hkchpu950mq3jlhaud0f5atioq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv_POZ8fYIHZZPQwu9XupYdHH8hv9keTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849953093964-1osfk3hkchpu950mq3jlhaud0f5atioq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

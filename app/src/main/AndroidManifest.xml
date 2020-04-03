@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="electronics.hisense.smartdeals.com">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name="electronics.hisense.smartdeals.com.offlineservices"
+        android:theme="@style/AppTheme">
+        <activity android:name="electronics.hisense.smartdeals.com.AdminActivity"></activity>
+        <activity android:name="electronics.hisense.smartdeals.com.MainActivity" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_key" /> -->
+        <activity
+            android:name="electronics.hisense.smartdeals.com.LocationActivity"
+            android:label="@string/title_activity_location" />
+        <activity android:name="electronics.hisense.smartdeals.com.Admin.UsersInfoActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.Admin.AdminMaintainActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.Admin.AdminUserProductsActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.Admin.AdminNewOrderActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.ConfirmOrderActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.AccountActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.ResetPasswordActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.SettingsActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.CartActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.ProductsDetailsActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.SearchActivity" />
+        <activity
+            android:name="electronics.hisense.smartdeals.com.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity android:name="electronics.hisense.smartdeals.com.Admin.AdminAddNewProductsActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.Admin.AdminCategoryActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.RegistrationActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.LoginActivity" />
+        <activity android:name="electronics.hisense.smartdeals.com.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+</manifest>

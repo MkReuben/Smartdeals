@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_one"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_profile_image"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon_logo"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#FFF"/>
+        <TextView
+            android:id="@+id/user_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:gravity="center"
+            android:text="Smartdeals"
+            android:textColor="#FFF"
+            android:layout_marginLeft="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linear_one"
+        android:layout_marginTop="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear_one"
+            >
+
+
+            <ImageView
+                android:id="@+id/contactus_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/contactus"
+                android:background="#FFF"
+                android:textSize="18dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:padding="9dp"
+                android:textStyle="bold|italic"
+                android:textColorHint="@color/colorPrimaryDark"
+
+                />
+            <TextView
+                android:id="@+id/tv_contactus"
+                android:text="Contact Us"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="9dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/contactus_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linear_four"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@id/linear_two"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        >-->
+
+<!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/r3"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_alignParentTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_below="@id/linear_one"&ndash;&gt;-->
+<!--&lt;!&ndash;            >&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/order_image"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/order"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="#FFF"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="18dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:padding="9dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textStyle="bold|italic"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColorHint="@color/colorPrimaryDark"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/tv_order"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="Orders"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:padding="9dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_centerInParent="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_toRightOf="@id/order_image"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->
+
+<!--    </LinearLayout>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_nine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linear_two"
+        android:layout_marginTop="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/r9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear_one"
+            >
+
+
+            <ImageView
+                android:id="@+id/loc_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plocation"
+                android:background="#FFF"
+                android:textSize="18dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:padding="9dp"
+                android:textStyle="bold|italic"
+                android:textColorHint="@color/colorPrimaryDark"
+
+                />
+            <TextView
+                android:id="@+id/tv_location"
+                android:text="Our Location"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="9dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/loc_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_five"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linear_nine"
+        android:layout_marginTop="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear_two"
+            >
+
+
+            <ImageView
+                android:id="@+id/help_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dhelp"
+                android:background="#FFF"
+                android:textSize="18dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:padding="9dp"
+                android:textStyle="bold|italic"
+                android:textColorHint="@color/colorPrimaryDark"
+
+                />
+            <TextView
+                android:id="@+id/tv_help"
+                android:text="Help"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="9dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/help_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linear_five"
+        android:layout_marginTop="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear_one"
+            >
+
+
+            <ImageView
+                android:id="@+id/admin_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/account"
+                android:background="#FFF"
+                android:textSize="18dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:padding="9dp"
+                android:textStyle="bold|italic"
+                android:textColorHint="@color/colorPrimaryDark"
+
+                />
+            <TextView
+                android:id="@+id/tv_admin"
+                android:text="Admin"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="9dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/admin_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminMaintainActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/admin_maintain_image"
+                android:layout_width="290dp"
+                android:layout_height="170dp"
+                android:cropToPadding="false"
+                android:layout_margin="18dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/imageadd"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <EditText
+                android:id="@+id/admin_maintain_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_maintain_image"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_design"
+                android:hint="Product Name.."
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+
+                />
+
+            <EditText
+                android:id="@+id/admin_maintain_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_maintain_name"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="20dp"
+                android:hint="Product Description.."
+                android:layout_marginLeft="45dp"
+                android:padding="20dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_design"
+
+                />
+            <EditText
+                android:id="@+id/admin_maintain_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_maintain_description"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="20dp"
+                android:hint="Product Price"
+                android:layout_marginLeft="45dp"
+                android:padding="20dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_design"
+
+                />
+            <EditText
+                android:id="@+id/admin_maintain_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_maintain_price"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="20dp"
+                android:hint=" Product Location"
+                android:layout_marginLeft="45dp"
+                android:padding="20dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_design"
+
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/admin_maintain_location">
+
+
+                <Button
+                    android:id="@+id/edit_btn"
+
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:text="Apply Changes"
+                    android:textColor="#FFF"
+                    android:background="@drawable/buttons"
+                    android:padding="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/delete_btn"
+
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:layout_marginTop="1dp"
+                    android:text="Delete Product"
+                    android:textColor="#FFF"
+                    android:background="@drawable/buttons"
+                    android:padding="17dp"
+                    android:layout_below="@+id/edit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
